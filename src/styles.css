@@ -29,6 +29,27 @@ body {
   text-align: center;
   justify-content: center;
 }
+.Form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.Form-inputs {
+  margin: 20px 0;
+  padding: 10px;
+}
+.Form-inputs > label {
+  font-size: medium;
+  font-weight: 400;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.Form-inputs > input {
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 10px;
+}
+
 .form-btn {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   cursor: pointer;
