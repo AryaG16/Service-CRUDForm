@@ -16,7 +16,6 @@ export class AddDataComponent {
   sendData(data: any) {
     this.tempData = data;
     this.tempData.id = this.userdata.getId();
-    console.log('Logged from addDataC sendFunc', this.tempData);
     this.userdata.addToList(this.tempData);
   }
 }

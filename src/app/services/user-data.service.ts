@@ -24,7 +24,6 @@ export class UserDataService {
   }
   deleteInList(id: number) {
     this.list = this.list.filter((i) => i.id !== id);
-    console.log('Logged from service', this.list);
   }
 
   toEditId: number = -1;
@@ -32,10 +31,13 @@ export class UserDataService {
     this.toEditId = id;
   }
 
-  tempData: any = {};
+  // tempData: any = {};
   editInList(data: any) {
-    this.list[this.toEditId].name = data.name;
-    this.list[this.toEditId].email = data.email;
-    console.log('Logged from editserv', this.list);
+    for (let i = 0; i < this.list.length; i++) {
+      if (this.list[i].id == this.toEditId) {
+        this.list[i].name = data.name;
+        this.list[i].email = data.email;
+      }
+    }
   }
 }
