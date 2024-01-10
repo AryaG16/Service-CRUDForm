@@ -11,9 +11,10 @@ export class UserDataService {
     { id: 1, name: 'Ahashd', email: 'aryan@gmail.com' },
     { id: 2, name: 'abgbg', email: 'aryan@gmail.com' },
   ];
-  id = 0;
+
+  id = this.list[this.list.length - 1].id;
   getId() {
-    return this.id++;
+    return ++this.id;
   }
   getList() {
     return this.list;

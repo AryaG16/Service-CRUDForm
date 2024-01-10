@@ -16,13 +16,7 @@ export class ViewDataComponent {
     this.userdata.deleteInList(id);
     this.users = this.userdata.getList();
   }
-  showEditField = false;
   editData(id: number) {
     this.userdata.saveToEditId(id);
-    this.showEditField = true;
-  }
-  edittedData(data: any) {
-    this.userdata.editInList(data);
-    this.showEditField = false;
   }
 }

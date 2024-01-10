@@ -9,17 +9,11 @@
                     <li> <b>Email:</b> {{user.email}}</li>
                 </div>
                 <div class="list-action">
-                    <button class="form-btn" id="edit-btn" (click)="editData(user.id)">Edit</button>
+                    <button routerLink="../editC" class="form-btn" id="edit-btn" (click)="editData(user.id)">
+                        Edit</button>
                     <button class="form-btn" id="del-btn" (click)="deleteData(user.id)">Delete</button>
                 </div>
             </ul>
         </div>
-        <form *ngIf="showEditField" #editForm="ngForm" (ngSubmit)="edittedData(editForm.value)">
-            <input type="text" name="name" placeholder="changeName" ngModel>
-            <br><br>
-            <input type="text" name="email" placeholder="changeEmail" ngModel>
-            <br><br>
-            <button>Change</button>
-        </form>
     </div>
 </div>

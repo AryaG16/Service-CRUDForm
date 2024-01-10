@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AddDataComponent } from './add-data/add-data.component';
 import { ViewDataComponent } from './view-data/view-data.component';
 import { HomeComponent } from './home/home.component';
+import { EditDataComponent } from './edit-data/edit-data.component';
 
 const routes: Routes = [
   {
@@ -12,6 +13,10 @@ const routes: Routes = [
   {
     path: 'viewC',
     component: ViewDataComponent,
+  },
+  {
+    path: 'editC',
+    component: EditDataComponent,
   },
   {
     path: '',

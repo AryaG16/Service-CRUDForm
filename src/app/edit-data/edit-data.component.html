@@ -1,1 +1,14 @@
-<p>edit-data works!</p>
+<div class="comp-box">
+    <h1 class="comp-title">Edit User</h1>
+    <div class="comp-main">
+        <div>
+            <form #editForm="ngForm" (ngSubmit)="edittedData(editForm.value)">
+                <input type="text" name="name" placeholder="changeName" ngModel>
+                <br><br>
+                <input type="text" name="email" placeholder="changeEmail" ngModel>
+                <br><br>
+                <button routerLink="viewC">Change</button>
+            </form>
+        </div>
+    </div>
+</div>
