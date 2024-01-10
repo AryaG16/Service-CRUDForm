@@ -1,4 +1,4 @@
-#addForm {
+.Form {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -8,7 +8,7 @@
   margin: 20px 0;
   padding: 10px;
 }
-.addForm-label {
+.addForm-inputs > label {
   font-size: medium;
   font-weight: 400;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;

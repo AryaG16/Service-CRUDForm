@@ -1,7 +1,7 @@
 <div class="comp-box">
     <h1 class="comp-title">ADD YOUR DATA</h1>
     <div class="comp-main">
-        <form id="addForm" #addUser="ngForm" (ngSubmit)="sendData(addUser.value)">
+        <form class="Form" #addUser="ngForm" (ngSubmit)="sendData(addUser.value)">
             <div class="addForm-inputs">
                 <label for="name">Enter Full Name: </label>
                 <input type="text" name="name" placeholder="Enter Name" ngModel>

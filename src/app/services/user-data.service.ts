@@ -26,18 +26,15 @@ export class UserDataService {
     console.log('Logged from service', this.list);
   }
 
+  toEditId: number = -1;
+  saveToEditId(id: number) {
+    this.toEditId = id;
+  }
+
   tempData: any = {};
-  editInList(id: number, data: any) {
-    this.tempData = data;
-    // this.list = this.list.filter((item) => {
-    //   if (item.id === id) {
-    //     item.name = this.tempData.name;
-    //     item.email = this.tempData.email;
-    //   }
-    //   console.log('DAta', this.list);
-    // });
-    this.list[id].name = data.name;
-    this.list[id].email = data.email;
+  editInList(data: any) {
+    this.list[this.toEditId].name = data.name;
+    this.list[this.toEditId].email = data.email;
     console.log('Logged from editserv', this.list);
   }
 }

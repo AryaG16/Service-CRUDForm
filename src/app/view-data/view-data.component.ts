@@ -17,14 +17,12 @@ export class ViewDataComponent {
     this.users = this.userdata.getList();
   }
   showEditField = false;
-  toEditId: any;
   editData(id: number) {
+    this.userdata.saveToEditId(id);
     this.showEditField = true;
-    this.toEditId = id;
   }
   edittedData(data: any) {
-    this.userdata.editInList(this.toEditId, data);
-    this.users = this.userdata.getList();
+    this.userdata.editInList(data);
     this.showEditField = false;
   }
 }

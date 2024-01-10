@@ -8,9 +8,10 @@ import { ViewDataComponent } from './view-data/view-data.component';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { EditDataComponent } from './edit-data/edit-data.component';
 
 @NgModule({
-  declarations: [AppComponent, AddDataComponent, ViewDataComponent, HomeComponent, NavBarComponent],
+  declarations: [AppComponent, AddDataComponent, ViewDataComponent, HomeComponent, NavBarComponent, EditDataComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
