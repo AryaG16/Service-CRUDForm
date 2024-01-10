@@ -1,0 +1,21 @@
+ul {
+  margin: 20px 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+ul li {
+  list-style: none;
+  font-weight: bold;
+}
+ul li a {
+  margin: 0 15px;
+  padding: 20px;
+  text-decoration: none;
+  color: rgb(237, 100, 130);
+  transition: 0.8s;
+}
+a:hover {
+  background-color: rgb(237, 100, 130);
+  color: rgb(145, 141, 141);
+}
