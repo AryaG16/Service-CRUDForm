@@ -2,4 +2,46 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+.comp-box {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.comp-title {
+  height: 10%;
+  width: 100%;
+  text-align: center;
+}
+.comp-main {
+  height: 75%;
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+}
+.form-btn {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  cursor: pointer;
+  text-align: center;
+  padding: 5px 20px;
+  border-radius: 10px;
+  background-color: rgb(122, 226, 122);
+  color: antiquewhite;
+  font-size: medium;
+  font-weight: 400;
+  width: 150px;
+}
+.form-btn:hover {
+  font-weight: bold;
+  background-color: rgb(109, 209, 109);
 }

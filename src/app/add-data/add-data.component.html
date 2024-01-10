@@ -1,9 +1,18 @@
-<h1>ADD YOUR DATA</h1>
-<br>
-<form #addUser="ngForm" (ngSubmit)="sendData(addUser.value)">
-    <input type="text" name="name" placeholder="Enter Name" ngModel>
-    <br><br>
-    <input type="text" name="email" placeholder="Enter Email" ngModel>
-    <br><br>
-    <button>ADD</button>
-</form>
+<div class="comp-box">
+    <h1 class="comp-title">ADD YOUR DATA</h1>
+    <div class="comp-main">
+        <form id="addForm" #addUser="ngForm" (ngSubmit)="sendData(addUser.value)">
+            <div class="addForm-inputs">
+                <label for="name">Enter Full Name: </label>
+                <input type="text" name="name" placeholder="Enter Name" ngModel>
+            </div>
+
+            <div class="addForm-inputs">
+                <label for="email">Enter Your Email: </label>
+                <input type="text" name="email" placeholder="Enter Email" ngModel>
+            </div>
+
+            <button class="form-btn">ADD</button>
+        </form>
+    </div>
+</div>

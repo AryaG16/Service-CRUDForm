@@ -27,7 +27,4 @@ export class ViewDataComponent {
     this.users = this.userdata.getList();
     this.showEditField = false;
   }
-  newList() {
-    this.users = this.userdata.getList();
-  }
 }

@@ -1,0 +1,40 @@
+#list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 30px;
+  border: 1px solid gray;
+}
+.list-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.list-info > li {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: medium;
+  font-weight: 400;
+}
+.list-action {
+  display: flex;
+  flex-direction: column;
+}
+#edit-btn {
+  margin: 10px 0;
+  background-color: rgb(75, 110, 152);
+}
+#edit-btn:hover {
+  background-color: rgb(94, 173, 207);
+}
+#del-btn {
+  background-color: rgb(179, 98, 98);
+}
+#del-btn:hover {
+  background-color: rgb(220, 38, 38);
+}

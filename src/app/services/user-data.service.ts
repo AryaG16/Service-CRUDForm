@@ -6,7 +6,11 @@ import { Injectable } from '@angular/core';
 export class UserDataService {
   constructor() {}
 
-  list: any[] = [];
+  list: any[] = [
+    { id: 0, name: 'Aryan', email: 'aryan@gmail.com' },
+    { id: 1, name: 'Ahashd', email: 'aryan@gmail.com' },
+    { id: 2, name: 'abgbg', email: 'aryan@gmail.com' },
+  ];
   id = 0;
   getId() {
     return this.id++;

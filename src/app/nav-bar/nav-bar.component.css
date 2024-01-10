@@ -1,0 +1,26 @@
+#navBar {
+  padding: 20px;
+  display: flex;
+  width: 85%;
+  justify-content: space-around;
+  align-items: center;
+}
+#navBar > li {
+  width: 100px;
+  padding: 20px 0 0;
+  list-style: none;
+  font-weight: bold;
+}
+#navBar > li > a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 100%;
+  padding: 20px 30px 10px;
+  text-decoration: none;
+  color: rgb(237, 100, 130);
+  transition: 0.8s;
+}
+#navBar > li > a:hover {
+  background-color: rgb(234, 219, 235);
+  color: rgb(17, 16, 16);
+  border-bottom: 2px solid black;
+}

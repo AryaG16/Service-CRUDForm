@@ -1,16 +1,25 @@
-<ul>
-    <li *ngFor="let user of users">
-        ID: {{user.id}} ----- Name: {{user.name}} ------Email: {{user.email}}
-        <button (click)="deleteData(user.id)">delete</button>
-        <button (click)="editData(user.id)">edit</button>
-    </li>
-</ul>
-
-<form *ngIf="showEditField" #editForm="ngForm" (ngSubmit)="edittedData(editForm.value)">
-    <input type="text" name="name" placeholder="changeName" ngModel>
-    <br><br>
-    <input type="text" name="email" placeholder="changeEmail" ngModel>
-    <br><br>
-    <button>Change</button>
-</form>
-<button (click)="newList()">Update</button>
+<div class="comp-box">
+    <h1 class="comp-title">User List</h1>
+    <div class="comp-main">
+        <div id="list">
+            <ul class="list-item" *ngFor="let user of users">
+                <div class="list-info">
+                    <li> <b>ID:</b> {{user.id}}</li>
+                    <li> <b>Name:</b> {{user.name}}</li>
+                    <li> <b>Email:</b> {{user.email}}</li>
+                </div>
+                <div class="list-action">
+                    <button class="form-btn" id="edit-btn" (click)="editData(user.id)">Edit</button>
+                    <button class="form-btn" id="del-btn" (click)="deleteData(user.id)">Delete</button>
+                </div>
+            </ul>
+        </div>
+        <form *ngIf="showEditField" #editForm="ngForm" (ngSubmit)="edittedData(editForm.value)">
+            <input type="text" name="name" placeholder="changeName" ngModel>
+            <br><br>
+            <input type="text" name="email" placeholder="changeEmail" ngModel>
+            <br><br>
+            <button>Change</button>
+        </form>
+    </div>
+</div>

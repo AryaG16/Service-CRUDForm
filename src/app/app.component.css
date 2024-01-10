@@ -1,21 +1,14 @@
-ul {
-  margin: 20px 0;
-  display: flex;
+#grid-container {
+  display: grid;
   width: 100%;
-  justify-content: space-around;
-}
-ul li {
-  list-style: none;
-  font-weight: bold;
-}
-ul li a {
-  margin: 0 15px;
+  height: 100%;
   padding: 20px;
-  text-decoration: none;
-  color: rgb(237, 100, 130);
-  transition: 0.8s;
+  grid-template-rows: 10% 0 85%;
+  gap: 20px 10px;
 }
-a:hover {
-  background-color: rgb(237, 100, 130);
-  color: rgb(145, 141, 141);
+
+#grid-item-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
