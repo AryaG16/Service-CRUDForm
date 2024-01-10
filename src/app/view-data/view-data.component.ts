@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { UserDataService } from '../services/user-data.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-view-data',
@@ -8,7 +9,7 @@ import { UserDataService } from '../services/user-data.service';
 })
 export class ViewDataComponent {
   users: any[] = [];
-  constructor(private userdata: UserDataService) {
+  constructor(private userdata: UserDataService, private router: Router) {
     this.users = userdata.getList();
   }
 
@@ -18,5 +19,6 @@ export class ViewDataComponent {
   }
   editData(id: number) {
     this.userdata.saveToEditId(id);
+    this.router.navigate(['editC']);
   }
 }
